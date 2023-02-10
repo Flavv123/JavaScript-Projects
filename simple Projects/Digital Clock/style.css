@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #111111;
+    color: #fff;
+
+}
+
+.heading {
+    font-family: 'Arvo', serif;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.clock {
+    position: relative;
+    width: 450px;
+    height: 150px;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+
+.clock .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock .container h2{
+    font-size: 3.5rem;
+    color: #000;
+}
+
+.clock .container h2:nth-child(odd) {
+    padding: 5px 10px;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0,0,0, 0.2);
+}
+
+#ampm {
+    position: relative;
+    font-family: 'Arvo', serif;
+    margin-left: 10px;
+    top: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+}
