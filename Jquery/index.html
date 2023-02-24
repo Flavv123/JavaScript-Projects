@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src = "https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+$(document).ready(function() {
+    $("html").append(
+        "<body\
+        <div id ='container'>\
+            <div id='inner'>\
+                <h1>Baisc jQuery</h1>\
+                <p id = '1'>Paragraph 1</p>\
+                <p id = '2'>Paragraph 2</p>\
+                <p id = '3'>Paragraph 3</p>\
+            </div>\
+        </div>\
+        </body>"
+    )
+    $( "p" ).hide( 500 );
+    $("p").show(1500);
+    $("#2").css({"color":"red"});
+    $("#3").click(function() {
+        $('h1').hide();
+    $("#1").click(function() {
+        console.log("You clicked a paragraph!");
+    })
+    
+    });
+});
+
+
+</script>
+    
+</html>
