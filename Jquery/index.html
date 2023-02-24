@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src = "https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+$(document).ready(function() {
+    $("html").append(
+        "<body\
+        <div id ='container'>\
+            <div id='inner'>\
+                <h1>Baisc jQuery</h1>\
+                <p id = '1'>Paragraph 1</p>\
+                <p id = '2'>Paragraph 2</p>\
+                <p id = '3'>Paragraph 3</p>\
+            </div>\
+        </div>\
+        </body>"
+    )
+    //Hides the paragraph for 500 miliseconds
+    $( "p" ).hide( 500 );
+    //shows the paragraphs after 1500 milliseconds //
+    $("p").show(1500);
+    // chages the font of the second pargraph to red //
+    $("#2").css({"color":"red"});
+    // when the third paragraph is clicked, the header is hidden //
+    $("#3").click(function() {
+        $('h1').hide();
+        // When first paragraph is clicked, the message will be displayed in the console //
+    $("#1").click(function() {
+        console.log("You clicked a paragraph!");
+    })
+    
+    });
+});
+
+
+</script>
+    
+</html>
